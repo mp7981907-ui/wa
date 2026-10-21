@@ -1,0 +1,35 @@
+{
+  "name": "wp-automation-by-ritik",
+  "version": "1.0.0",
+  "description": "Low-cost WhatsApp automation CRM for Hostinger Node.js hosting using QR login and Baileys.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "check": "node --check src/server.js && node scripts/smoke-test.js && node scripts/api-smoke-test.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "crm",
+    "automation",
+    "baileys",
+    "hostinger",
+    "nodejs"
+  ],
+  "author": "Ritik Jaiswal",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^7.0.0-rc11",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pino": "^9.6.0",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
